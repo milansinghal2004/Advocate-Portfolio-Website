@@ -1,26 +1,48 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { SiteNav } from "@/components/site-nav";
+import { Hero } from "@/components/hero";
+import { MetricsBar } from "@/components/metrics-bar";
+import { About } from "@/components/about";
+import { PracticeAreas } from "@/components/practice-areas";
+import { Timeline } from "@/components/timeline";
+import { Testimonials } from "@/components/testimonials";
+import { Contact } from "@/components/contact";
+import { SiteFooter } from "@/components/site-footer";
 
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "Valerius — Advocate & Legal Consultant" },
+      {
+        name: "description",
+        content:
+          "Premium advocate and legal consultant. Strategic representation in high court litigation, supreme court matters, arbitration, and corporate advisory.",
+      },
+      { property: "og:title", content: "Valerius — Advocate & Legal Consultant" },
+      {
+        property: "og:description",
+        content: "Strategic legal representation for elite private clients and corporate entities.",
+      },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "/" },
+    ],
+    links: [{ rel: "canonical", href: "/" }],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
-  return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
-}
-
 function Index() {
-  return <PlaceholderIndex />;
+  return (
+    <main className="bg-background text-foreground min-h-screen">
+      <SiteNav />
+      <Hero />
+      <MetricsBar />
+      <About />
+      <PracticeAreas />
+      <Timeline />
+      <Testimonials />
+      <Contact />
+      <SiteFooter />
+    </main>
+  );
 }
