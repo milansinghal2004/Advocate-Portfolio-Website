@@ -2,28 +2,28 @@ import { useInView } from "@/hooks/use-in-view";
 
 const items = [
   {
-    year: "2020 — Present",
-    role: "Senior Partner",
-    org: "Valerius Chambers",
-    body: "Leading the firm's international litigation and arbitration practice.",
+    year: "2025 — Present",
+    role: "Associate",
+    org: "Additional Solicitor General for India, Rajasthan",
+    body: "Representing the Union of India in complex litigation before the Rajasthan High Court.",
   },
   {
-    year: "2015 — 2020",
-    role: "Principal Counsel",
-    org: "Federal High Court",
-    body: "Constitutional advisory and appellate strategy for landmark proceedings.",
+    year: "2024 — 2025",
+    role: "Judicial Law Researcher",
+    org: "Rajasthan & Delhi High Court",
+    body: "Worked under Hon'ble Mr. Justice Arun Monga. Research, drafting, and precedent analysis for landmark proceedings.",
   },
   {
-    year: "2011 — 2015",
-    role: "Judicial Research Fellow",
-    org: "Supreme Court of Justice",
-    body: "Research, draft opinions, and precedent analysis for the Chief Justice's bench.",
-  },
-  {
-    year: "2009 — 2011",
+    year: "2023 — 2024",
     role: "LL.M.",
-    org: "Harvard Law School",
-    body: "Comparative Constitutional Law. Graduated with distinction.",
+    org: "Post-Graduate Law School",
+    body: "Specialized in Constitutional and Corporate Law.",
+  },
+  {
+    year: "2018 — 2023",
+    role: "BBA.LL.B.(Hons.)",
+    org: "University of Law",
+    body: "Graduated with Honors, specializing in Business and Legal Studies.",
   },
 ];
 

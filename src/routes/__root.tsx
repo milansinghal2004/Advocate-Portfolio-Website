@@ -74,7 +74,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { name: "theme-color", content: "#0f1011" },
       { property: "og:type", content: "website" },
-      { property: "og:site_name", content: "Valerius" },
+      { property: "og:site_name", content: "Divya Modi" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
@@ -99,7 +99,7 @@ function RootShell({ children }: { children: React.ReactNode }) {
       <head>
         <HeadContent />
       </head>
-      <body>
+      <body suppressHydrationWarning>
         {children}
         <Scripts />
       </body>

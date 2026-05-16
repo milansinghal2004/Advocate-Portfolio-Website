@@ -25,7 +25,7 @@ export function SiteNav() {
       }`}
     >
       <a href="#top" className="font-display italic text-xl tracking-tight text-foreground">
-        Valerius<span className="text-accent">.</span>
+        Divya Modi<span className="text-accent">.</span>
       </a>
       <div className="hidden md:flex gap-10 text-[10px] uppercase tracking-[0.25em] font-medium text-muted-foreground">
         {links.map((l) => (

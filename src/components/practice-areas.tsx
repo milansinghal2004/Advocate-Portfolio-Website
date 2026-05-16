@@ -4,32 +4,32 @@ const areas = [
   {
     n: "01",
     title: "High Court Litigation",
-    body: "Definitive resolution of complex jurisdictional disputes and constitutional challenges.",
+    body: "Extensive experience in representing complex jurisdictional disputes and writ petitions before the Rajasthan and Delhi High Courts.",
   },
   {
     n: "02",
-    title: "Supreme Court Matters",
-    body: "Appellate advocacy at the highest echelon of the national judicial hierarchy.",
+    title: "Government Representation",
+    body: "Strategic advocacy for the Union of India in high-stakes litigation, serving as an Associate to the Additional Solicitor General.",
   },
   {
     n: "03",
-    title: "Legal Consultation",
-    body: "Bespoke advisory for high-net-worth individuals requiring absolute discretion.",
+    title: "Judicial Research",
+    body: "Deep analytical expertise derived from service as a Judicial Law Researcher, providing authoritative precedent analysis and drafting.",
   },
   {
     n: "04",
-    title: "Arbitration",
-    body: "Private dispute resolution and international mediation across major global hubs.",
+    title: "Constitutional Matters",
+    body: "Handling definitive challenges to legislative and administrative actions with a focus on fundamental rights and state policy.",
   },
   {
     n: "05",
-    title: "Corporate Advisory",
-    body: "Governance, M&A oversight, and regulatory strategy for global enterprises.",
+    title: "Civil & Commercial Law",
+    body: "Comprehensive advisory and representation in contractual disputes, recovery proceedings, and property law.",
   },
   {
     n: "06",
-    title: "Client Advocacy",
-    body: "Public interest litigation and high-stakes personal brand protection strategies.",
+    title: "Arbitration",
+    body: "Private dispute resolution and international mediation, ensuring efficient and binding settlements for corporate entities.",
   },
 ];
 

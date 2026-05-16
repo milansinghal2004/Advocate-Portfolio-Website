@@ -12,16 +12,16 @@ import { SiteFooter } from "@/components/site-footer";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Valerius — Advocate & Legal Consultant" },
+      { title: "Adv. Divya Modi — Advocate & Legal Consultant" },
       {
         name: "description",
         content:
-          "Premium advocate and legal consultant. Strategic representation in high court litigation, supreme court matters, arbitration, and corporate advisory.",
+          "Adv. Divya Modi is a premium advocate and legal consultant. Strategic representation in high court litigation, supreme court matters, arbitration, and corporate advisory.",
       },
-      { property: "og:title", content: "Valerius — Advocate & Legal Consultant" },
+      { property: "og:title", content: "Adv. Divya Modi — Advocate & Legal Consultant" },
       {
         property: "og:description",
-        content: "Strategic legal representation for elite private clients and corporate entities.",
+        content: "Strategic legal representation for elite private clients and corporate entities by Adv. Divya Modi.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "/" },

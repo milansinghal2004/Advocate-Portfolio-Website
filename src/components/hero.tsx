@@ -1,4 +1,4 @@
-import portrait from "@/assets/advocate-portrait.jpg";
+
 
 export function Hero() {
   return (
@@ -8,22 +8,22 @@ export function Hero() {
       <div className="pointer-events-none absolute -bottom-40 -left-40 w-[40rem] h-[40rem] rounded-full bg-accent/5 blur-[160px]" />
 
       <div className="max-w-7xl mx-auto relative">
-        <div className="grid md:grid-cols-12 gap-12 md:gap-16 items-end">
-          <div className="md:col-span-8 animate-fade-up">
+        <div className="flex flex-col items-start max-w-4xl">
+          <div className="animate-fade-up">
             <p className="text-[10px] uppercase tracking-[0.4em] text-accent mb-8">
               Advocate · Legal Consultant
             </p>
             <h1 className="font-display text-[3.5rem] sm:text-7xl md:text-8xl lg:text-9xl leading-[0.92] text-balance">
-              The Quiet <span className="italic text-accent">Authority</span>
+              Excellence in <span className="italic text-accent">Legal</span>
               <br />
-              of Justice
+              Advocacy
             </h1>
             <div className="mt-12 h-px w-full bg-border relative overflow-hidden">
               <div className="absolute inset-0 bg-accent animate-line-reveal [animation-delay:500ms]" />
             </div>
             <p className="mt-8 text-lg md:text-xl text-muted-foreground max-w-xl font-light text-pretty leading-relaxed">
-              Strategic legal representation for elite private clients and international
-              corporate entities. Refined. Resolute. Relentless.
+              Strategic legal representation with a focus on High Court litigation and Judicial research. 
+              Dedicated to precision, precedent, and uncompromising advocacy.
             </p>
             <div className="mt-12 flex flex-wrap items-center gap-6">
               <a
@@ -36,19 +36,6 @@ export function Hero() {
               <span className="text-[10px] uppercase tracking-[0.25em] text-muted-foreground">
                 Available for International Arbitration
               </span>
-            </div>
-          </div>
-
-          <div className="md:col-span-4 animate-fade-up [animation-delay:200ms]">
-            <div className="relative">
-              <img
-                src={portrait}
-                alt="Portrait of the advocate"
-                width={1024}
-                height={1280}
-                className="w-full aspect-[4/5] object-cover border border-border grayscale hover:grayscale-0 transition-all duration-1000"
-              />
-              <div className="absolute -bottom-px left-0 right-0 h-24 bg-gradient-to-t from-background to-transparent" />
             </div>
           </div>
         </div>

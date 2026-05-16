@@ -1,8 +1,31 @@
 import { useState } from "react";
 import chambers from "@/assets/chambers-architecture.jpg";
+import { submitContact } from "@/lib/contact-action";
 
 export function Contact() {
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setLoading(true);
+    const formData = new FormData(e.currentTarget);
+    const data = {
+      name: formData.get("name") as string,
+      email: formData.get("email") as string,
+      matter: formData.get("matter") as string,
+    };
+
+    try {
+      await submitContact({ data });
+      setSubmitted(true);
+    } catch (error) {
+      console.error("Submission failed:", error);
+      alert("Something went wrong. Please try again.");
+    } finally {
+      setLoading(false);
+    }
+  }
 
   return (
     <section id="contact" className="grid md:grid-cols-2 border-b border-border">
@@ -16,10 +39,7 @@ export function Contact() {
           Strictly confidential. Every inquiry is reviewed personally within twenty-four hours.
         </p>
         <form
-          onSubmit={(e) => {
-            e.preventDefault();
-            setSubmitted(true);
-          }}
+          onSubmit={handleSubmit}
           className="space-y-6 max-w-md"
         >
           {[
@@ -30,6 +50,7 @@ export function Contact() {
             <div key={f.id} className="relative">
               <input
                 id={f.id}
+                name={f.id}
                 type={f.type}
                 required
                 placeholder=" "
@@ -45,10 +66,10 @@ export function Contact() {
           ))}
           <button
             type="submit"
-            disabled={submitted}
+            disabled={submitted || loading}
             className="w-full py-5 bg-accent text-accent-foreground text-[10px] tracking-[0.3em] font-bold uppercase mt-8 hover:bg-foreground transition-colors disabled:opacity-60"
           >
-            {submitted ? "Request Received" : "Initiate Review"}
+            {loading ? "Processing..." : submitted ? "Request Received" : "Initiate Review"}
           </button>
         </form>
       </div>
@@ -68,19 +89,19 @@ export function Contact() {
               Primary Chambers
             </p>
             <address className="not-italic text-sm font-light leading-loose text-foreground/90">
-              72 Chancery Lane
+              Rajasthan High Court
               <br />
-              London, WC2A 1NF
+              Jaipur Bench
               <br />
-              United Kingdom
+              Rajasthan, India
             </address>
             <div className="h-px w-full bg-border my-8" />
             <div className="space-y-2 text-[10px] uppercase tracking-[0.25em] text-muted-foreground">
               <p>
-                <span className="text-foreground/80">+44</span> 020 7946 0181
+                <span className="text-foreground/80">+91</span> 7976762241
               </p>
               <p>
-                <span className="text-foreground/80">chambers</span>@valerius.law
+                <span className="text-foreground/80">singhalmilan92</span>@gmail.com
               </p>
             </div>
           </div>
