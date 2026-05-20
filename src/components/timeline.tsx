@@ -2,28 +2,34 @@ import { useInView } from "@/hooks/use-in-view";
 
 const items = [
   {
-    year: "2025 — Present",
-    role: "Associate",
-    org: "Additional Solicitor General for India, Rajasthan",
-    body: "Representing the Union of India in complex litigation before the Rajasthan High Court.",
+    year: "Nov 2025 — Present",
+    role: "Junior Associate",
+    org: "Sr. Adv. Bharat Vyas, ASG for India, Rajasthan",
+    body: "Working as a Junior Associate in Jaipur under the Additional Solicitor General for India.",
   },
   {
-    year: "2024 — 2025",
-    role: "Judicial Law Researcher",
-    org: "Rajasthan & Delhi High Court",
-    body: "Worked under Hon'ble Mr. Justice Arun Monga. Research, drafting, and precedent analysis for landmark proceedings.",
+    year: "Jul 2025 — Oct 2025",
+    role: "Law Researcher",
+    org: "Delhi",
+    body: "Served as a Law Researcher under Justice Arun Monga.",
   },
   {
-    year: "2023 — 2024",
+    year: "Aug 2024 — Jul 2025",
+    role: "Law Researcher",
+    org: "Jodhpur",
+    body: "Served as a Law Researcher under Justice Arun Monga.",
+  },
+  {
+    year: "2022 — 2024",
     role: "LL.M.",
-    org: "Post-Graduate Law School",
-    body: "Specialized in Constitutional and Corporate Law.",
+    org: "DAVV, Indore",
+    body: "Specialized in Business Law.",
   },
   {
-    year: "2018 — 2023",
-    role: "BBA.LL.B.(Hons.)",
-    org: "University of Law",
-    body: "Graduated with Honors, specializing in Business and Legal Studies.",
+    year: "2017 — 2022",
+    role: "BBA.LL.B.",
+    org: "DAVV, Indore",
+    body: "Completed Bachelor of Business Administration & Bachelor of Laws.",
   },
 ];
 
@@ -44,7 +50,9 @@ function Row({ item, index }: { item: (typeof items)[number]; index: number }) {
         </span>
         <div className="md:col-span-9">
           <h4 className="font-display text-2xl md:text-3xl mb-1">{item.role}</h4>
-          <p className="text-sm uppercase tracking-[0.2em] text-muted-foreground mb-3">{item.org}</p>
+          <p className="text-sm uppercase tracking-[0.2em] text-muted-foreground mb-3">
+            {item.org}
+          </p>
           <p className="text-base text-foreground/70 font-light leading-relaxed max-w-xl">
             {item.body}
           </p>

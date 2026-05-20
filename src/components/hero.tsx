@@ -1,8 +1,9 @@
-
-
 export function Hero() {
   return (
-    <section id="top" className="relative pt-36 md:pt-44 pb-20 px-6 md:px-10 border-b border-border overflow-hidden">
+    <section
+      id="top"
+      className="relative pt-36 md:pt-44 pb-20 px-6 md:px-10 border-b border-border overflow-hidden"
+    >
       {/* ambient glow */}
       <div className="pointer-events-none absolute -top-40 -right-40 w-[40rem] h-[40rem] rounded-full bg-accent/10 blur-[140px]" />
       <div className="pointer-events-none absolute -bottom-40 -left-40 w-[40rem] h-[40rem] rounded-full bg-accent/5 blur-[160px]" />
@@ -22,8 +23,8 @@ export function Hero() {
               <div className="absolute inset-0 bg-accent animate-line-reveal [animation-delay:500ms]" />
             </div>
             <p className="mt-8 text-lg md:text-xl text-muted-foreground max-w-xl font-light text-pretty leading-relaxed">
-              Strategic legal representation with a focus on High Court litigation and Judicial research. 
-              Dedicated to precision, precedent, and uncompromising advocacy.
+              Strategic legal representation with a focus on High Court litigation and Judicial
+              research. Dedicated to precision, precedent, and uncompromising advocacy.
             </p>
             <div className="mt-12 flex flex-wrap items-center gap-6">
               <a

@@ -3,8 +3,8 @@ import { createStart, createMiddleware, createCsrfMiddleware } from "@tanstack/r
 import { renderErrorPage } from "./lib/error-page";
 
 const csrfMiddleware = createCsrfMiddleware({
-  filter: (ctx) => ctx.handlerType === 'serverFn',
-})
+  filter: (ctx) => ctx.handlerType === "serverFn",
+});
 
 const errorMiddleware = createMiddleware().server(async ({ next }) => {
   try {

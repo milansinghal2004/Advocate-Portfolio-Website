@@ -20,7 +20,9 @@ export function MetricsBar() {
           <div className="font-display text-4xl md:text-5xl text-accent mb-3">
             <AnimatedCounter value={m.value} prefix={m.prefix} suffix={m.suffix} />
           </div>
-          <div className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground">{m.label}</div>
+          <div className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
+            {m.label}
+          </div>
         </div>
       ))}
     </div>

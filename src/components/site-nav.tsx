@@ -29,7 +29,11 @@ export function SiteNav() {
       </a>
       <div className="hidden md:flex gap-10 text-[10px] uppercase tracking-[0.25em] font-medium text-muted-foreground">
         {links.map((l) => (
-          <a key={l.href} href={l.href} className="hover:text-accent transition-colors duration-300">
+          <a
+            key={l.href}
+            href={l.href}
+            className="hover:text-accent transition-colors duration-300"
+          >
             {l.label}
           </a>
         ))}

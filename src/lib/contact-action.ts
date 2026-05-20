@@ -12,16 +12,16 @@ export const submitContact = createServerFn({ method: "POST" })
   .inputValidator(contactSchema)
   .handler(async ({ data }) => {
     console.log("Contact submission received:", data);
-    
+
     try {
       const apiKey = process.env.RESEND_API_KEY || "re_5oSzwMsF_7pUeBs3yBSFvhsGmAmZmeZyX";
       const resend = new Resend(apiKey);
-      
+
       console.log("Attempting to send email via Resend...");
-      
+
       const { data: resendData, error } = await resend.emails.send({
-        from: 'Contact Form <onboarding@resend.dev>',
-        to: 'tiveke2508@bitmah.com',
+        from: "Contact Form <onboarding@resend.dev>",
+        to: "tiveke2508@bitmah.com",
         subject: `New Inquiry: ${data.name}`,
         text: `Name: ${data.name}\nEmail: ${data.email}\n\nMatter:\n${data.matter}`,
       });
@@ -36,6 +36,6 @@ export const submitContact = createServerFn({ method: "POST" })
       console.error("Critical Email Error:", err.message || err);
       throw new Error(err.message || "Failed to send email");
     }
-    
+
     return { success: true };
   });

@@ -13,20 +13,20 @@ export function About() {
         <div className="md:col-span-5">
           <p className="text-[10px] uppercase tracking-[0.4em] text-accent mb-6">The Advocate</p>
           <h2 className="font-display text-4xl md:text-5xl leading-tight text-balance">
-            A practice built on <span className="italic text-accent">discretion</span>, precedent, and
-            uncompromising preparation.
+            A practice built on <span className="italic text-accent">discretion</span>, precedent,
+            and uncompromising preparation.
           </h2>
         </div>
         <div className="md:col-span-7 md:pt-10">
           <p className="text-lg text-foreground/80 leading-relaxed font-light mb-6">
-            Adv. Divya Modi has built a distinguished career focused on high-stakes litigation 
-            and constitutional matters. With experience at both the Rajasthan and Delhi High Courts, 
-            she provides strategic counsel and meticulous preparation for every brief.
+            Adv. Divya Modi has built a distinguished career focused on high-stakes litigation and
+            constitutional matters. With experience at both the Rajasthan and Delhi High Courts, she
+            provides strategic counsel and meticulous preparation for every brief.
           </p>
           <p className="text-base text-muted-foreground leading-relaxed font-light mb-12">
-            Having served as a Judicial Law Researcher and now as an Associate at the Additional 
-            Solicitor General's office, her practice is defined by intellectual rigor and 
-            a deep understanding of judicial precedent.
+            Having served as a Judicial Law Researcher and now as an Associate at the Additional
+            Solicitor General's office, her practice is defined by intellectual rigor and a deep
+            understanding of judicial precedent.
           </p>
           <div className="flex flex-wrap gap-2">
             {tags.map((t) => (

@@ -38,10 +38,7 @@ export function Contact() {
         <p className="text-muted-foreground max-w-md mb-12 font-light leading-relaxed">
           Strictly confidential. Every inquiry is reviewed personally within twenty-four hours.
         </p>
-        <form
-          onSubmit={handleSubmit}
-          className="space-y-6 max-w-md"
-        >
+        <form onSubmit={handleSubmit} className="space-y-6 max-w-md">
           {[
             { id: "name", label: "Full Name", type: "text" },
             { id: "email", label: "Secure Email", type: "email" },

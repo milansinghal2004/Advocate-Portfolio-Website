@@ -9,7 +9,13 @@ interface Props {
   duration?: number;
 }
 
-export function AnimatedCounter({ value, prefix = "", suffix = "", decimals = 0, duration = 1800 }: Props) {
+export function AnimatedCounter({
+  value,
+  prefix = "",
+  suffix = "",
+  decimals = 0,
+  duration = 1800,
+}: Props) {
   const { ref, inView } = useInView<HTMLSpanElement>({ threshold: 0.4 });
   const [n, setN] = useState(0);
 

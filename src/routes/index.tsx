@@ -21,7 +21,8 @@ export const Route = createFileRoute("/")({
       { property: "og:title", content: "Adv. Divya Modi — Advocate & Legal Consultant" },
       {
         property: "og:description",
-        content: "Strategic legal representation for elite private clients and corporate entities by Adv. Divya Modi.",
+        content:
+          "Strategic legal representation for elite private clients and corporate entities by Adv. Divya Modi.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "/" },
