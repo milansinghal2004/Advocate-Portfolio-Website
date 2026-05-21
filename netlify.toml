@@ -6,4 +6,3 @@
 [[edge_functions]]
   path = "/*"
   function = "server"
-  status = 200
