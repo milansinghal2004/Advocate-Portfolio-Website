@@ -14,7 +14,7 @@ export function Contact() {
     try {
       await emailjs.sendForm(
         "service_iandffn",
-        "template_8oy93xo",
+        "template_10nw3bz",
         formRef.current!,
         "7oSYp1H7LsKhOmxvg",
       );
