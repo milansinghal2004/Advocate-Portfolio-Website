@@ -1,23 +1,23 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import chambers from "@/assets/chambers-architecture.jpg";
-import { submitContact } from "@/lib/contact-action";
+import emailjs from '@emailjs/browser';
 
 export function Contact() {
+  const formRef = useRef<HTMLFormElement>(null);
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setLoading(true);
-    const formData = new FormData(e.currentTarget);
-    const data = {
-      name: formData.get("name") as string,
-      email: formData.get("email") as string,
-      matter: formData.get("matter") as string,
-    };
 
     try {
-      await submitContact({ data });
+      await emailjs.sendForm(
+        'service_iandffn',
+        'template_8oy93xo',
+        formRef.current!,
+        '7oSYp1H7LsKhOmxvg'
+      );
       setSubmitted(true);
     } catch (error) {
       console.error("Submission failed:", error);
@@ -38,7 +38,7 @@ export function Contact() {
         <p className="text-muted-foreground max-w-md mb-12 font-light leading-relaxed">
           Strictly confidential. Every inquiry is reviewed personally within twenty-four hours.
         </p>
-        <form onSubmit={handleSubmit} className="space-y-6 max-w-md">
+        <form ref={formRef} onSubmit={handleSubmit} className="space-y-6 max-w-md">
           {[
             { id: "name", label: "Full Name", type: "text" },
             { id: "email", label: "Secure Email", type: "email" },
