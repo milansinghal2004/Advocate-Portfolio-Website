@@ -76,6 +76,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: "Divya Modi" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "google-site-verification", content: "wvIX6xgiVFNsZ9Qq4lVRNS_-7-KLv6ZsPDNrQY1TUXA" },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
