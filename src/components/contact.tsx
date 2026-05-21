@@ -73,7 +73,7 @@ export function Contact() {
       <div className="relative min-h-[480px] overflow-hidden">
         <img
           src={chambers}
-          alt="Chambers architecture"
+          alt="Law chambers of Adv. Divya Modi at Rajasthan High Court, Jaipur"
           width={1024}
           height={1024}
           loading="lazy"

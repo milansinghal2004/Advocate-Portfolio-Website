@@ -15,16 +15,18 @@ export function Hero() {
               Advocate · Legal Consultant
             </p>
             <h1 className="font-display text-[3.5rem] sm:text-7xl md:text-8xl lg:text-9xl leading-[0.92] text-balance">
-              Excellence in <span className="italic text-accent">Legal</span>
+              Adv. Divya Modi <br />
+              <span className="italic text-accent">Premier Legal Counsel</span>
               <br />
-              Advocacy
+              in Jaipur
             </h1>
             <div className="mt-12 h-px w-full bg-border relative overflow-hidden">
               <div className="absolute inset-0 bg-accent animate-line-reveal [animation-delay:500ms]" />
             </div>
             <p className="mt-8 text-lg md:text-xl text-muted-foreground max-w-xl font-light text-pretty leading-relaxed">
-              Strategic legal representation with a focus on High Court litigation and Judicial
-              research. Dedicated to precision, precedent, and uncompromising advocacy.
+              Strategic legal representation with a focus on High Court litigation, constitutional
+              matters, and judicial research. Dedicated to precision, precedent, and uncompromising
+              advocacy in Jaipur and Delhi.
             </p>
             <div className="mt-12 flex flex-wrap items-center gap-6">
               <a

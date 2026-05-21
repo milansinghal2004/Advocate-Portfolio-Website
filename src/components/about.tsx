@@ -19,14 +19,14 @@ export function About() {
         </div>
         <div className="md:col-span-7 md:pt-10">
           <p className="text-lg text-foreground/80 leading-relaxed font-light mb-6">
-            Adv. Divya Modi has built a distinguished career focused on high-stakes litigation and
-            constitutional matters. With experience at both the Rajasthan and Delhi High Courts, she
-            provides strategic counsel and meticulous preparation for every brief.
+            A premier legal practice in Jaipur built on discretion, precedent, and uncompromising
+            preparation. Adv. Divya Modi brings unparalleled expertise from the Rajasthan and Delhi
+            High Courts, specializing in high-stakes litigation and constitutional law.
           </p>
           <p className="text-base text-muted-foreground leading-relaxed font-light mb-12">
-            Having served as a Judicial Law Researcher and now as an Associate at the Additional
-            Solicitor General's office, her practice is defined by intellectual rigor and a deep
-            understanding of judicial precedent.
+            Having served as a Judicial Law Researcher and now as a Junior Associate at the
+            Additional Solicitor General's office, her practice is defined by intellectual rigor and
+            a deep understanding of judicial precedent.
           </p>
           <div className="flex flex-wrap gap-2">
             {tags.map((t) => (

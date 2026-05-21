@@ -12,20 +12,28 @@ import { SiteFooter } from "@/components/site-footer";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Adv. Divya Modi — Advocate & Legal Consultant" },
+      { title: "Adv. Divya Modi | Top Lawyers in Jaipur & Legal Consultant" },
       {
         name: "description",
         content:
-          "Adv. Divya Modi is a premium advocate and legal consultant. Strategic representation in high court litigation, supreme court matters, arbitration, and corporate advisory.",
+          "Adv. Divya Modi is among the best lawyers in Jaipur, offering premium legal consulting. Strategic representation in high court litigation, supreme court matters, arbitration, and corporate advisory.",
       },
-      { property: "og:title", content: "Adv. Divya Modi — Advocate & Legal Consultant" },
+      {
+        property: "og:title",
+        content: "Adv. Divya Modi | Top Lawyers in Jaipur & Legal Consultant",
+      },
       {
         property: "og:description",
         content:
-          "Strategic legal representation for elite private clients and corporate entities by Adv. Divya Modi.",
+          "Strategic legal representation for elite private clients and corporate entities by Adv. Divya Modi, one of the premier lawyers in Jaipur.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "/" },
+      {
+        name: "keywords",
+        content:
+          "Divya Modi, Adv. Divya Modi, lawyers in jaipur, legal consultant jaipur, advocate in jaipur, best lawyers in jaipur",
+      },
     ],
     links: [{ rel: "canonical", href: "/" }],
   }),

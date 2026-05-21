@@ -4,32 +4,32 @@ const areas = [
   {
     n: "01",
     title: "High Court Litigation",
-    body: "Extensive experience in representing complex jurisdictional disputes and writ petitions before the Rajasthan and Delhi High Courts.",
+    body: "Extensive experience in representing complex jurisdictional disputes, writ petitions, and appellate matters before the Rajasthan High Court (Jaipur Bench) and Delhi High Court.",
   },
   {
     n: "02",
     title: "Government Representation",
-    body: "Strategic advocacy for the Union of India in high-stakes litigation, serving as an Associate to the Additional Solicitor General.",
+    body: "Strategic advocacy for the Union of India in high-stakes litigation, serving as a Junior Associate to the Additional Solicitor General for India.",
   },
   {
     n: "03",
     title: "Judicial Research",
-    body: "Deep analytical expertise derived from service as a Judicial Law Researcher, providing authoritative precedent analysis and drafting.",
+    body: "Deep analytical expertise derived from service as a Judicial Law Researcher, providing authoritative precedent analysis and constitutional drafting.",
   },
   {
     n: "04",
     title: "Constitutional Matters",
-    body: "Handling definitive challenges to legislative and administrative actions with a focus on fundamental rights and state policy.",
+    body: "Handling definitive challenges to legislative and administrative actions with a focus on fundamental rights, state policy, and supreme court guidelines.",
   },
   {
     n: "05",
     title: "Civil & Commercial Law",
-    body: "Comprehensive advisory and representation in contractual disputes, recovery proceedings, and property law.",
+    body: "Comprehensive advisory and legal representation in contractual disputes, commercial litigation, recovery proceedings, and property law.",
   },
   {
     n: "06",
     title: "Arbitration",
-    body: "Private dispute resolution and international mediation, ensuring efficient and binding settlements for corporate entities.",
+    body: "Private dispute resolution and international mediation, ensuring efficient and binding settlements for high-net-worth individuals and corporate entities.",
   },
 ];
 

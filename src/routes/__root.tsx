@@ -94,10 +94,30 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 });
 
 function RootShell({ children }: { children: React.ReactNode }) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "LegalService",
+    name: "Adv. Divya Modi",
+    image: "https://divyamodi.com/og-image.jpg",
+    url: "https://divyamodi.com",
+    telephone: "+91-7976762241",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Jaipur",
+      addressRegion: "Rajasthan",
+      addressCountry: "IN",
+    },
+    areaServed: ["Jaipur", "New Delhi"],
+  };
+
   return (
     <html lang="en">
       <head>
         <HeadContent />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
       </head>
       <body suppressHydrationWarning>
         {children}
