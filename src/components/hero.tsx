@@ -14,11 +14,14 @@ export function Hero() {
             <p className="text-[10px] uppercase tracking-[0.4em] text-accent mb-8">
               Advocate · Legal Consultant
             </p>
-            <h1 className="font-display text-[3.5rem] sm:text-7xl md:text-8xl lg:text-9xl leading-[0.92] text-balance">
-              Adv. Divya Modi <br />
-              <span className="italic text-accent">Premier Legal Counsel</span>
-              <br />
-              in Jaipur
+            <h1 className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-[1.05] tracking-tight">
+              Adv. Divya Modi
+              <span className="italic text-accent block mt-2 sm:mt-4 text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
+                Premier Legal Counsel
+              </span>
+              <span className="block mt-2 sm:mt-4 text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-foreground/70">
+                in Jaipur
+              </span>
             </h1>
             <div className="mt-12 h-px w-full bg-border relative overflow-hidden">
               <div className="absolute inset-0 bg-accent animate-line-reveal [animation-delay:500ms]" />
