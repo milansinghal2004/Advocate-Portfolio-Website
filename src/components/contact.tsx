@@ -40,9 +40,9 @@ export function Contact() {
         </p>
         <form ref={formRef} onSubmit={handleSubmit} className="space-y-6 max-w-md">
           {[
-            { id: "name", label: "Full Name", type: "text" },
-            { id: "email", label: "Secure Email", type: "email" },
-            { id: "matter", label: "Nature of Matter", type: "text" },
+            { id: "from_name", label: "Full Name", type: "text" },
+            { id: "reply_to", label: "Secure Email", type: "email" },
+            { id: "message", label: "Nature of Matter", type: "text" },
           ].map((f) => (
             <div key={f.id} className="relative">
               <input
