@@ -1,6 +1,6 @@
 import { useState, useRef } from "react";
 import chambers from "@/assets/chambers-architecture.jpg";
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
 
 export function Contact() {
   const formRef = useRef<HTMLFormElement>(null);
@@ -13,10 +13,10 @@ export function Contact() {
 
     try {
       await emailjs.sendForm(
-        'service_iandffn',
-        'template_8oy93xo',
+        "service_iandffn",
+        "template_8oy93xo",
         formRef.current!,
-        '7oSYp1H7LsKhOmxvg'
+        "7oSYp1H7LsKhOmxvg",
       );
       setSubmitted(true);
     } catch (error) {
@@ -51,11 +51,11 @@ export function Contact() {
                 type={f.type}
                 required
                 placeholder=" "
-                className="peer w-full bg-transparent border-b border-border py-4 text-foreground focus:border-accent outline-none transition-colors text-sm"
+                className="peer w-full bg-transparent border-b border-border pb-4 pt-8 text-foreground focus:border-accent outline-none transition-colors text-base"
               />
               <label
                 htmlFor={f.id}
-                className="absolute left-0 top-4 text-[10px] uppercase tracking-[0.25em] text-muted-foreground transition-all duration-300 peer-focus:-translate-y-4 peer-focus:text-accent peer-[&:not(:placeholder-shown)]:-translate-y-4 peer-[&:not(:placeholder-shown)]:text-accent"
+                className="absolute left-0 top-6 text-[10px] uppercase tracking-[0.25em] text-muted-foreground transition-all duration-300 peer-focus:-translate-y-6 peer-focus:text-accent peer-[&:not(:placeholder-shown)]:-translate-y-6 peer-[&:not(:placeholder-shown)]:text-accent"
               >
                 {f.label}
               </label>
