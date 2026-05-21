@@ -98,7 +98,7 @@ export function Contact() {
                 <span className="text-foreground/80">+91</span> 7976762241
               </p>
               <p>
-                <span className="text-foreground/80">singhalmilan92</span>@gmail.com
+                <span className="text-foreground/80">divyamodi190</span>@gmail.com
               </p>
             </div>
           </div>
